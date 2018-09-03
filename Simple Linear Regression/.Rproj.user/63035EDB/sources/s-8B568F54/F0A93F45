@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1535731453779.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F0A93F45",
+    "lastKnownWriteTime" : 1535731826,
+    "last_content_update" : 1535962258563,
+    "path" : "C:/Users/Eier/Desktop/Datascience/R - Programming/Simple Linear Regression/Regression.r",
+    "project_path" : "Regression.r",
+    "properties" : {
+        "cursorPosition" : "44,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
