@@ -1,0 +1,29 @@
+
+data = read.csv('RomPrice.csv')
+
+
+library(caTools)
+set.seed(123)
+
+split = sample.split(data$Rom, SplitRatio = 2/3)
+training_set = subset(data, split == TRUE)
+test_set = subset(data, split == FALSE)
+data$Pris.i.Mnok
+
+## Fitting the regresseor
+regressor = lm(formula = Rom ~ Pris.i.Mnok, data = training_set)
+
+
+y_pred = predict(regressor, newdata = test_set)
+
+
+
+library(ggplot2)
+
+# Visualising the test set results 
+
+ggplot() + 
+  geom_point(aes(x = test_set$Rom, y= test_set$Pris.i.Mnok), color = 'red') 
++ geom_line(aes(x = test_set$Rom, Y predict(regressor, newdata = test_set)),
+            color = 'blue') + ggtitle('Rom vs Price pr month (test set)') + 
+  xlab('Years of experience') + ylab('Salary')
